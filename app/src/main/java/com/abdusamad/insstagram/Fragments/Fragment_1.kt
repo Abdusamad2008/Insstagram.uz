@@ -19,6 +19,7 @@ import kotlin.random.Random
 import kotlin.random.nextInt
 
 class Fragment_1 : Fragment() {
+    //test for github
     @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater,
