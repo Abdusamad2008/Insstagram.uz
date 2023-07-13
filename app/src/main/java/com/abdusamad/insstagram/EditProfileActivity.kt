@@ -25,7 +25,7 @@ class EditProfileActivity:AppCompatActivity() {
         }
 
         val name=editname.text.toString()
-        database.MyName = editname.text.toString()
+        database.MyName = name
 
     }
 

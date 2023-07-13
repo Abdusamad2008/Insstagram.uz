@@ -59,12 +59,12 @@
 
         <Button
             android:textSize="10sp"
-            android:id="@+id/insta_5_messages"
+            android:id="@+id/other_user"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginHorizontal="5dp"
             android:layout_weight="1"
-            android:text="" />
+            android:text="message" />
 
 
     </LinearLayout>
@@ -110,7 +110,6 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/insta_5_text"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"

@@ -7,6 +7,7 @@
     import android.view.LayoutInflater
     import android.view.View
     import android.view.ViewGroup
+    import android.widget.ImageView
     import android.widget.LinearLayout
     import android.widget.TextView
     import android.widget.Toast
@@ -14,6 +15,7 @@
     import com.abdusamad.insstagram.EditProfileActivity
     import com.abdusamad.insstagram.R
     import com.abdusamad.insstagram.ShareProfile
+    import com.abdusamad.insstagram.StoryActivity
 
     class Fragment_5 : Fragment() {
         @SuppressLint("MissingInflatedId")
@@ -29,6 +31,10 @@
             val text:TextView = root.findViewById(R.id.insta_5_text)
             val share_profile:TextView = root.findViewById(R.id.insta_5_share_profile)
             val edit_profile:TextView = root.findViewById(R.id.insta_5_edit_profile)
+            val story:ImageView = root.findViewById(R.id.insta_5_story_id)
+            story.setOnClickListener {
+                startActivity(Intent(requireActivity(), StoryActivity::class.java))
+            }
 
             share_profile.setOnClickListener {
                 startActivity(Intent(requireActivity(), ShareProfile::class.java))

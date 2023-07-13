@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:background="@drawable/img"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="10dp">
 
     <androidx.cardview.widget.CardView
         android:layout_width="350dp"
@@ -44,6 +45,7 @@
 
 
         <Button
+            android:layout_gravity="center"
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:layout_margin="10dp"

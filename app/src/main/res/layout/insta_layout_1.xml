@@ -1,380 +1,403 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:fontFamily="serif-monospace"
-                android:text="Instagram"
-                android:textColor="@color/black"
-                android:textSize="30sp"
-                android:textStyle="italic|bold" />
-
-            <ImageView
-                android:id="@+id/favorite_btn_id"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="5dp"
-                android:src="@drawable/icon_favorite_border" />
-
-            <ImageView
-                android:id="@+id/insta_1_chat_id"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="5dp"
-                android:src="@drawable/chat" />
-
-        </LinearLayout>
-
-
-        <ProgressBar
-            android:id="@+id/insta_1_progressbar"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:ignore="SpeakableTextPresentCheck">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/insta_1_my_story"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_margin="10dp"
-                    android:src="@drawable/acc_circle_2" />
-
-                <ImageView
-                    android:id="@+id/other_user_1"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_margin="10dp"
-                    android:src="@drawable/icon_account_circle3" />
-
-                <ImageView
-                    android:id="@+id/other_user_2"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_margin="10dp"
-                    android:src="@drawable/icon_account_circle2" />
-
-                <ImageView
-                    android:id="@+id/other_user_3"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_margin="10dp"
-                    android:src="@drawable/icon_account_circle" />
-            </LinearLayout>
-
-        </HorizontalScrollView>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/icon_account_circle3" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="User_One"
-                    android:textColor="@color/black"
-                    android:textSize="25sp"
-                    android:textStyle="normal" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Uzbekistan Namangan"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:textStyle="normal" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <ImageView
-            android:id="@+id/insta_1_post_1"
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:layout_marginTop="5dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/png_3" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1">
-
-                <ImageView
-                    android:id="@+id/insta_1_favorite1_id"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:src="@drawable/icon_favorite_border" />
-
-                <ImageView
-                    android:id="@+id/comment_btn"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:src="@drawable/chat" />
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:src="@drawable/icon_send" />
-            </LinearLayout>
-
-            <ImageView
-                android:id="@+id/bookmark"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/icon_bookmark_border" />
-
-
-        </LinearLayout>
+        android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/insta_like_counter_1"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="17dp"
-            android:layout_marginBottom="10dp"
-            android:text="0 like"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="cursive"
+            android:text="Instagram"
             android:textColor="@color/black"
-            android:textSize="20sp" />
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/insta_1_my_story_2"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/acc_circle_2" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/insta_1_myname"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="User_One"
-                    android:textColor="@color/black"
-                    android:textSize="25sp"
-                    android:textStyle="normal" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Uzbekistan Namangan"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:textStyle="normal" />
-            </LinearLayout>
-        </LinearLayout>
+            android:textSize="30sp"
+            android:textStyle="italic|bold" />
 
         <ImageView
-            android:id="@+id/insta_1_post_2"
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:layout_marginTop="5dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/png_2" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1">
-
-                <ImageView
-                    android:id="@+id/insta_1_favorite2_id"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:src="@drawable/icon_favorite_border" />
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:src="@drawable/chat" />
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:src="@drawable/icon_send" />
-            </LinearLayout>
-
-            <ImageView
-                android:id="@+id/bookmark_"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/icon_bookmark_border" />
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/insta_like_counter_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="17dp"
-            android:layout_marginBottom="10dp"
-            android:text="0 like"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/insta_1_my_story_3"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/acc_circle_2" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="User_One"
-                    android:textColor="@color/black"
-                    android:textSize="25sp"
-                    android:textStyle="normal" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Uzbekistan Namangan"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
-                    android:textStyle="normal" />
-            </LinearLayout>
-        </LinearLayout>
+            android:id="@+id/favorite_btn_id"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="5dp"
+            android:src="@drawable/icon_favorite_border" />
 
         <ImageView
-            android:id="@+id/insta_1_post_3"
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:layout_marginTop="5dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/png_1" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1">
-
-                <ImageView
-                    android:id="@+id/insta_1_favorite3_id"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:src="@drawable/icon_favorite_border" />
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:src="@drawable/chat" />
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:src="@drawable/icon_send" />
-            </LinearLayout>
-
-            <ImageView
-                android:id="@+id/bookmark_2"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/icon_bookmark_border" />
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/insta_like_counter_3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="17dp"
-            android:layout_marginBottom="10dp"
-            android:text="0 like"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
-
-        <!--        <GridView-->
-        <!--            android:id="@+id/insta_1_gridview"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="match_parent" />-->
+            android:id="@+id/insta_1_chat_id"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="5dp"
+            android:src="@drawable/chat" />
 
     </LinearLayout>
 
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_to_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</ScrollView>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <HorizontalScrollView
+                    android:layout_marginVertical="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/insta_1_my_story"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/acc_circle_2" />
+
+                        <ImageView
+                            android:id="@+id/other_user_1"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/icon_account_circle3" />
+
+                        <ImageView
+                            android:id="@+id/other_user_2"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/icon_account_circle2" />
+
+                        <ImageView
+                            android:id="@+id/other_user_3"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/icon_account_circle" />
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/icon_account_circle3" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="User_One"
+                            android:textColor="@color/black"
+                            android:textSize="25sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Uzbekistan Namangan"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/insta_1_post_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/png_3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/insta_1_favorite1_id"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@drawable/icon_favorite_border" />
+
+                        <ImageView
+                            android:id="@+id/comment_btn"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@drawable/chat" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@drawable/icon_send" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/bookmark"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/icon_bookmark_border" />
+
+
+                </LinearLayout>
+
+<!--                <TextView-->
+<!--                    android:id="@+id/post_comment_1"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginHorizontal="17dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:text="the post comment"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="20sp" />-->
+                <TextView
+                    android:id="@+id/insta_like_counter_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="17dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="0 like"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/insta_1_my_story_2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/acc_circle_2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/insta_1_myname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="User_One"
+                            android:textColor="@color/black"
+                            android:textSize="25sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Uzbekistan Namangan"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/insta_1_post_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/png_2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/insta_1_favorite2_id"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@drawable/icon_favorite_border" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@drawable/chat" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@drawable/icon_send" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/bookmark_"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/icon_bookmark_border" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/insta_like_counter_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="17dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="0 like"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/insta_1_my_story_3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/acc_circle_2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="User_One"
+                            android:textColor="@color/black"
+                            android:textSize="25sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Uzbekistan Namangan"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/insta_1_post_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/png_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/insta_1_favorite3_id"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@drawable/icon_favorite_border" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@drawable/chat" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@drawable/icon_send" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/bookmark_2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/icon_bookmark_border" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/insta_like_counter_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="17dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="0 like"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <!--        <GridView-->
+                <!--            android:id="@+id/insta_1_gridview"-->
+                <!--            android:layout_width="match_parent"-->
+                <!--            android:layout_height="match_parent" />-->
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+<!--    <androidx.coordinatorlayout.widget.CoordinatorLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <include layout="@layout/comment_bottomsheet_layout" />-->
+<!--    </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+</LinearLayout>

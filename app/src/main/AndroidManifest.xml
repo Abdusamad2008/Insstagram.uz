@@ -25,6 +25,7 @@
         <activity android:name=".ShareProfile"/>
         <activity android:name=".ChatActivity"/>
         <activity android:name=".NotificationActivity"/>
+        <activity android:name=".StoryActivity"/>
     </application>
 
 </manifest>
